@@ -9,15 +9,15 @@ public interface DBConfig {
 	 String DBNAME = "wso2carbon";
 	 String DBPASS = "wso2carbon";
 
-	String DBURL1 ="jdbc:postgresql://localhost:5432/dst";
+	String DBURL1 ="jdbc:postgresql://localhost:5432/ES_STORAGE";
 
-	String DBNAME1 = "postgres";
-	String DBPASS1 = "123456";
+	String DBNAME1 = "wso2carbon";
+	String DBPASS1 = "wso2carbon";
 
 
 
 	//数据存放的临时目录
-	String BasePath="/home/H2Data";
+	String BasePath="/Users/admin/Desktop/ttttttt";
 
 //	ES_STORAGE数据库表文件存放的临时目录
 	String ES_STORAGE_Path=BasePath+"/ES_STORAGE/";

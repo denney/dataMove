@@ -18,6 +18,7 @@ public class Sql_joint {
             String sql="CALL CSVWRITE('"+DB_cvs_path+list_cvs_tableName.get(i)+".csv', 'SELECT * FROM "+list_cvs_tableName.get(i)+"');";
             s=sql+s;
         }
+        System.out.println(s);
 
         return s;
     }
@@ -27,7 +28,7 @@ public class Sql_joint {
         String s="";
         for (int i = 0; i <list_cvs_tableName.size() ; i++) {
 //            copy dm_application from '/Users/00323702/Desktop/h2/dm_application.csv' with (format csv, header true, quote '"', DELIMITER ',', encoding 'UTF8');
-            String sql="copy"+list_cvs_tableName.get(i)+" from '"+DB_cvs_path+list_cvs_tableName.get(i)+".csv' with (format csv, header true, quote '\"', DELIMITER ',', encoding 'UTF8');";
+            String sql="copy "+list_cvs_tableName.get(i)+" from '"+DB_cvs_path+list_cvs_tableName.get(i)+".csv' with (format csv, header true, quote '\"', DELIMITER ',', encoding 'UTF8');";
             s=sql+s;
         }
 

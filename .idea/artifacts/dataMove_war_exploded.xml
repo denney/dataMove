@@ -1,0 +1,20 @@
+<component name="ArtifactManager">
+  <artifact type="exploded-war" name="dataMove:war exploded">
+    <output-path>$PROJECT_DIR$/target/dataMove</output-path>
+    <root id="root">
+      <element id="directory" name="WEB-INF">
+        <element id="directory" name="classes">
+          <element id="module-output" name="dataMove" />
+        </element>
+        <element id="directory" name="lib">
+          <element id="library" level="project" name="Maven: com.h2database:h2:1.4.190" />
+          <element id="library" level="project" name="Maven: org.postgresql:postgresql:9.4.1207" />
+        </element>
+      </element>
+      <element id="directory" name="META-INF">
+        <element id="file-copy" path="$PROJECT_DIR$/target/dataMove/META-INF/MANIFEST.MF" />
+      </element>
+      <element id="javaee-facet-resources" facet="dataMove/web/Web" />
+    </root>
+  </artifact>
+</component>

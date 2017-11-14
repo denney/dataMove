@@ -8,20 +8,20 @@ public class DBUtil {
     static {
         try {
             Class.forName("org.h2.Driver");
-            Class.forName("org.h2.Driver");
+            Class.forName("org.postgresql.Driver");
         } catch (ClassNotFoundException e) {
 
             e.printStackTrace();
         }
     }
 
-    public static Connection getConH21() throws Exception {
+    public static Connection getConH2_ES_STORAGE() throws Exception {
         Connection con = null;
         con = DriverManager.getConnection(DBConfig.DBURL, DBConfig.DBNAME, DBConfig.DBPASS);
         return con;
     }
 
-    public static Connection getConB() throws Exception {
+    public static Connection getConPostger_ES_STORAGE() throws Exception {
         Connection con = null;
         con = DriverManager.getConnection(DBConfig.DBURL1, DBConfig.DBNAME1, DBConfig.DBPASS1);
         return con;

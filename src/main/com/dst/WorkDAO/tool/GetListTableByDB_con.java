@@ -1,7 +1,6 @@
 package main.com.dst.WorkDAO.tool;
 
 
-import main.com.dst.baseFrame.BaseDAO;
 import main.com.dst.baseFrame.DBUtil;
 
 import java.sql.Connection;
@@ -13,7 +12,7 @@ import java.util.List;
 /**
  * Created by admin on 2017/8/16.
  */
-public class GetListTableByDB_con extends BaseDAO {
+public class GetListTableByDB_con {
 
     public static List<String> findTableNameListByDB_con(Connection con) throws Exception {
 
